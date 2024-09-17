@@ -12,7 +12,7 @@ app.use(cors({
   credentials: true
 }));
 app.use(express.json());
-
+mongoose.set('strictQuery', false);
 mongoose
   .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
