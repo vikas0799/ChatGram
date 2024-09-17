@@ -8,7 +8,7 @@ const socket = require("socket.io");
 require("dotenv").config();
 
 app.use(cors({
-  origin:  "*", // Use ORIGIN from .env process.env.ORIGIN ||
+  origin:  "*", // Use ORIGIN from .env process.env.ORIGIN || req from anywhere
   credentials: true
 }));
 app.use(express.json());

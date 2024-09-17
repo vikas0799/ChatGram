@@ -4,6 +4,7 @@
             
 export const host="https://chatgram-2-bjak.onrender.com/"
                 //  "https://chatgram-2-bjak.onrender.com"
+                // https://chatgram-2-bjak.onrender.com
 export const loginRoute = `${host}/api/auth/login`;
 export const registerRoute = `${host}/api/auth/register`;
 export const logoutRoute = `${host}/api/auth/logout`;
