@@ -8,7 +8,7 @@ const socket = require("socket.io");
 require("dotenv").config();
 
 app.use(cors({
-  origin: process.env.ORIGIN || "http://localhost:3000", // Use ORIGIN from .env
+  origin:  "*", // Use ORIGIN from .env process.env.ORIGIN ||
   credentials: true
 }));
 app.use(express.json());
